@@ -9,7 +9,7 @@ GLFW, ImGui, Glad and glm. GLFW and glm are included via CMake's FetchContent
 .
 Glad is added manually via source code.
 
-Fork of: [https://github.com/RujalAcharya/voxeloop-base.git](https://github.com/cmmw/imgui-glfw-glad-glm)
+Fork of: [https://github.com/cmmw/imgui-glfw-glad-glm](https://github.com/cmmw/imgui-glfw-glad-glm)
 
 
 ### Example
