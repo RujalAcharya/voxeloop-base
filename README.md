@@ -1,4 +1,4 @@
-# imgui-glfw-glad
+# voxeloop-base
 
 A CMake project for [GLFW](https://github.com/glfw/glfw)
 , [Glad](https://gen.glad.sh/), [ImGui](https://github.com/ocornut/imgui) and
@@ -6,23 +6,11 @@ A CMake project for [GLFW](https://github.com/glfw/glfw)
 
 This project is meant to simplify the import of the OpenGL related libraries
 GLFW, ImGui, Glad and glm. GLFW and glm are included via CMake's FetchContent
-whereas ImGui is imported as a git submodule (wrapped by simple CMake project).
+.
 Glad is added manually via source code.
 
-### Versioning
+Fork of: [https://github.com/RujalAcharya/voxeloop-base.git](https://github.com/cmmw/imgui-glfw-glad-glm)
 
-The major and minor part of the version number is analogous to GLFW, the patch
-version is incremented whenever the project is updated. The following list
-contains detailed information of the versions used in each release:
-
-| Release | GLFW   | ImGui | Glad                  | glm     |
-|---------|--------|-------|-----------------------|---------|
-| v3.3.5  | v3.3.6 | v1.86 | 2.0.0 (gl 4.5 / core) | 0.9.9.8 |
-| v3.3.4  | v3.3.6 | v1.85 | 2.0.0 (gl 4.5 / core) | 0.9.9.8 |
-| v3.3.3  | v3.3.5 | v1.85 | 2.0.0 (gl 4.5 / core) | 0.9.9.8 |
-| v3.3.2  | v3.3.5 | v1.85 | 2.0.0 (gl 4.5 / core) | N/A     |
-| v3.3.1  | v3.3.4 | v1.83 | 2.0.0 (gl 4.5 / core) | N/A     |
-| v3.3.0  | v3.3.3 | v1.81 | 2.0.0 (gl 4.5 / core) | N/A     |
 
 ### Example
 
@@ -37,12 +25,12 @@ include(FetchContent)
 # Use static libraries
 set(BUILD_SHARED_LIBS OFF)
 FetchContent_Declare(
-        imgui-glfw-glad-glm
-        GIT_REPOSITORY https://github.com/cmmw/imgui-glfw-glad-glm.git
-        GIT_TAG v3.3.4
+        voxeloop-base
+        GIT_REPOSITORY https://github.com/RujalAcharya/voxeloop-base.git
+        GIT_TAG main
 )
 
-FetchContent_MakeAvailable(imgui-glfw-glad-glm)
+FetchContent_MakeAvailable(voxeloop-base)
 
 add_executable(
         app
