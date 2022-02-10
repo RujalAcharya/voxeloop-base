@@ -15,12 +15,18 @@ FetchContent_Declare(
         GIT_REPOSITORY https://github.com/glfw/glfw.git
         GIT_TAG 3.3.6
 )
+
 FetchContent_Declare(
         glm
         GIT_REPOSITORY https://github.com/g-truc/glm.git
         GIT_TAG 0.9.9.8
 )
 
-FetchContent_MakeAvailable(glfw glm)
+FetchContent_Declare(
+        stb
+        GIT_REPOSITORY https://github.com/nothings/stb.git
+)
+
+FetchContent_MakeAvailable(glfw glm stb)
 add_subdirectory(glad)
 add_subdirectory(imgui)
