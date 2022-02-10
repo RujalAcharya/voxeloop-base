@@ -24,3 +24,4 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(glfw glm)
 add_subdirectory(glad)
 add_subdirectory(imgui)
+add_subdirectory(stb)
