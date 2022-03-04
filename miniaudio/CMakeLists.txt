@@ -3,6 +3,7 @@ add_library(
     miniaudio.h
 )
 
+target_link_libraries(miniaudio)
 
 target_include_directories(
     miniaudio
