@@ -1,5 +1,3 @@
-target_include_directories(
-    miniaudio
-    PUBLIC
+include_directories(
     miniaudio
 )
